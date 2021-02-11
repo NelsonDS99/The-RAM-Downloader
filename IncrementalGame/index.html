@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="interface.css" />
+      <h1 style="font-size:30px">The RAM Downloader!</h1>
+  </head>
+  <body>
+    <script type="text/javascript" src="main.js"></script>
+    <div class="row">
+      <div class="column">
+	RAM Downloaded: <span class="RAM"></span>
+	<span style="display:none" class="show_speed">Speed Increased:  <span class="speed"></span></span>
+	<span style="display:none" class="show_wifi">Wifi Routers: <span class="wifi"></span></span>
+	<span style="display:none" class="show_wifi_boost">Wifi Boosters:  <span class="wifi_boost"></span></span>
+      <span style ="display:none" class="show_spacex">Space-X Satellites: <span class="spacex"></span></span>
+          <span style ="display:none" class="show_spacex">Space-X RAM: <span class="spacex_RAM"></span> / <span id="spacex_RAM_MAX"></span></span>
+      <span style = "display:none" class="show_Damage">Damage Power: <span class="Damage"></span></span>
+      <span style = "display:none" class="show_Soldier">Soldiers: <span class="Soldier"></span></span>
+          <progress style="display:none" id="health" value="100" max="100" class="show_enemy"></span></progress>
+          <span style ="display:none" class="show_enemy">Alien Health: <span class="Health"></span></span>
+      <button style="display:none" onClick="fightEnemy(1)" class="show_enemy">Fight Alien!</button>
+          <span style="display:none" class="show_enemy">If the Alien is not Killed all the RAM is STOLEN!</span>
+      </div>
+      <div class="column">
+	<button onClick="mineRAM(1)"><img src="computer-ram.png" width="200" height="200"></button>
+	<button style="display:none" class="show_speed" onClick="upgradeSpeed(1)">Upgrade Speed: $<span class="speed_cost"></span></button>
+	<button style="display:none" class="show_wifi" onClick="buyWifi(1)">Buy Wifi Routers: $<span class="wifi_cost"></span></button>
+	<button style="display:none" class="show_wifi" onClick="upgradeWifiBoost(1)">Boost Wifi Signal: $<span class="wifi_boost_cost"></span></button>
+    <button style="display:none" class="show_spacex" onClick="buySpaceX(1)">Buy Space-X Satellite: $<span class="spacex_cost"></span></button>
+    <button style="display:none" class="show_spacex" onClick="withdrawRAM()">Withdraw Space-X RAM</button>
+    <button style="display:none" class="show_Damage" onClick="upgradeDamage(1)">Increase Damage: $<span class="Damage_cost"></span></button>
+    <button style="display:none" class="show_Soldier" onClick="upgradeSoldier(1)">Recruit Soldier: $<span class="Soldier_cost"></span></button>
+      </div>
+    </div>
+        <div class="column">
+            <table>
+                <caption>Table O' Help</caption>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Upgrade Speed</td>
+                    <td>Increases RAM downloaded per Click</td>
+                </tr>
+                <tr>
+                    <td>Wifi Routers</td>
+                    <td>Automatically Download RAM, more routers = more RAM</td>
+                </tr>
+                <tr>
+                    <td>Wifi Signal</td>
+                    <td>Increases RAM automatically downloaded</td>
+                </tr>
+                <tr>
+                    <td>Space-X Satellite</td>
+                    <td>Allows for Reserve RAM to be downloaded. Increments with Clicks</td>
+                </tr>
+                <tr>
+                    <td>Withdraw Space-X RAM</td>
+                    <td>Moves Space-X RAM to RAM downloaded</td>
+                </tr>
+                <tr>
+                    <td>Damage</td>
+                    <td>Upgrade to help fight the aliens!</td>
+                </tr>
+                <tr>
+                    <td>Soldiers</td>
+                    <td>Do Damage Over Time to the Aliens</td>
+                </tr>
+
+            </table>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+button {
+    background-color: #FFFFFF;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;    
+}
+
+button:hover {
+    background-color: #e7e7e7; 
+}
+
+button:active {
+    background-color: #ececec;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.progress {
+    height: 1.5em;
+    width: 100%;
+    background-color: #c9c9c9;
+    position: relative;
+    color: chartreuse;
+}
+
+.background-img {
+    position:absolute;
+    left:0px;
+    bottom: 0px;
+    width: 500px;
+    height:500px;
+}
+
+table, th, td{
+    width: 50%;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+th {
+    font-family: Broadway;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+
+}
+
+tr:nth-child(even) {
+    background-color: aqua;
+}
+tr:nth-child(odd)
+{
+    background-color: darkseagreen;
+}
